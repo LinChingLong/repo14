@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+    
+</head>
+<body>
+    <div class="wrapper_out" id="wrapper_out">
+        <div class="top">
+            <div class="top_word">
+                <h2>There is no one</h2>
+                <h3>who loves pain</h3>
+            </div>
+            <div class="form"><img src="./images/Text.png"></div>
+            <div class="word_frame">
+                <span><img class="cactus_left" src="./images/cactus.png" alt=""></span><h5>paragraph</h5><span><img class="cactus_right" src="./images/cactus.png" alt=""></span>
+                <h6>1.Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h6>
+                <span><img class="cactus_left" src="./images/cactus.png" alt=""></span><h5>paragraph</h5><span><img class="cactus_right" src="./images/cactus.png" alt=""></span>
+                <h6>1.Quisque sodales leo vitae vulputate auctor.<br>
+                    2.Proin ac justo ut nisl tincidunt imperdiet.Maecenas viverra libero a pellentesque blandit.<br>
+                    3.Cras tristique tellus id leo bibendum, eu dapibus nisl accumsan.<br>
+                    4.Donec ultrices sapien vitae leo venenatis ullamcorper.</h6>
+            </div>
+        </div>
+        <div class="wave"><img src="./images/海浪.png"></div>
+        <main>
+            <div class="input_box">
+                <p>store*</p>
+                <select v-model="store" required>
+                    <!-- <option value="" style="display: none">placeholder text</option> -->
+                    <option value="store1">store1</option>
+                    <option value="store2">store2</option>
+                    <option value="store3">store3</option>
+                </select>
+                <p>name*</p>
+                <input type="text" placeholder="placeholder text" v-model="name" required>
+                <p>phone*</p>
+                <input type="text" placeholder="placeholder text" v-model="phone" required>
+                <p>Amount of consumption*</p>
+                <input type="text" placeholder="placeholder text" v-model="Amount" required>
+                <p>payment*</p>
+                <select v-model="payment" required>
+                    <option value="digital payment">digital payment</option>
+                    <option value="ATM">ATM</option>
+                </select>
+                <img src="./images/Frame 1819.png">
+                <img class="tortoise" src="./images/烏龜.png">
+            </div>
+            <div class="submit" @click="confirm">
+                <!-- <img src="./images/submit.png"> -->
+                <img v-if="!cond" src="./images/false.png">
+                <img v-if="cond" src="./images/true.png">
+                <p v-if="!cond">This person does not exist</p>
+            </div>
+            <div class="label_array">
+                <ul>
+                    <li>
+                        <img src="./images/Rectangle 412.png">
+                        <h5>A</h5>
+                        <h6 style="color:#B3B960;">dehumidifier</h6>
+                        <div class="small_icon_green"><p>ONE</p></div>
+                        <img class="green_icon" src="./images/certificateA.png">
+                    </li>
+                    <li>
+                        <img src="./images/Rectangle 412.png">
+                        <h5>B</h5>
+                        <h6 style="color:#B3B960;">range hood</h6>
+                        <div class="small_icon_green"><p>ONE</p></div>
+                        <img class="green_icon" src="./images/certificateA.png">
+                    </li>
+                    <li>
+                        <img src="./images/Rectangle 412.png">
+                        <h5>C</h5>
+                        <h6 style="color:#B3B960;">vacuum cleaner</h6>
+                        <div class="small_icon_green"><p>ONE</p></div>
+                        <img class="green_icon" src="./images/certificateA.png">
+                    </li>
+                    <li>
+                        <img src="./images/Rectangle 412.png">
+                        <h5>D</h5>
+                        <h6 style="color:#A0BCC8;">toaster</h6>
+                        <div class="small_icon_blue"><p>ONE</p></div>
+                        <img class="blue_icon" src="./images/certificateD.png"> 
+                    </li>
+                    <li>
+                        <img src="./images/Rectangle 412.png">
+                        <h5>E</h5>
+                        <h6 style="color:#A0BCC8;"> scale</h6>
+                        <div class="small_icon_blue"><p>ONE</p></div>
+                        <img class="blue_icon" src="./images/certificateD.png"> 
+                    </li>
+                    <li>
+                        <img src="./images/Rectangle 412.png">
+                        <h5>F</h5>
+                        <h6 style="color:#A0BCC8;">straightening iron</h6>
+                        <div class="small_icon_blue"><p>ONE</p></div>
+                        <img class="blue_icon" src="./images/certificateD.png"> 
+                    </li>
+                    <li>
+                        <img src="./images/Rectangle 412.png">
+                        <h5>G</h5>
+                        <h6 style="color:#A0BCC8;">vacuum cleaner</h6>
+                        <div class="small_icon_blue"><p>FIVE</p></div>
+                        <img class="blue_icon" src="./images/certificateD.png"> 
+                    </li>
+                    <li>
+                        <img src="./images/Rectangle 412.png">
+                        <h5>H</h5>
+                        <h6 style="color:#A0BCC8;">rice cooker</h6>
+                        <div class="small_icon_blue"><p>TEN</p></div>
+                        <img class="blue_icon" src="./images/certificateD.png"> 
+                    </li>
+                </ul>
+            </div>
+            <div class="lighthouse">
+                <div class="word_wrapper">
+                    <p style="color:#B57556;">13.32</p>
+                    <p style="color:#204379;">who seeks after it and</p>
+                    <p style="color:#204379;">wants to have it</p>
+                </div>
+                <img src="./images/lighthouse.png">
+            </div>
+            <div class="footer_blue">
+                <p>Neque porro quisquam <br>
+                    est qui dolorem!
+                </p>
+                <div class="market">
+                    <img src="./images/market.png">
+                </div>
+            </div>
+        </main>
+    </div>
+    
+    <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
+    <script>
+        new Vue({
+            el: '#wrapper_out',
+
+            data: {
+                name:'',
+                phone:'',
+                Amount:'',
+                cond:false,
+            },
+            methods: {
+                confirm(){
+                    var myreg=/^09[0-9]{8}$/; 
+                    if(!myreg.test(this.phone)){ 
+                        alert("手機格式不正確！");
+                    }
+                    // console.log(this.phone);
+
+                    var myname=/.*[A-Za-z\u4e00-\u9fa5]+.*$/; 
+                    if(!myname.test(this.name)){ 
+                        alert("請輸入中文或英文！");
+                    }
+                    // console.log(this.name);
+
+                    var myprice=/\d/;
+                    if(!myprice.test(this.Amount) || this.Amount <= 0){
+                        alert("請輸入數字!");
+                    }
+                    // console.log(this.Amount);
+
+                    if(myreg.test(this.phone) && myname.test(this.name) && myprice.test(this.Amount) && this.Amount > 0){
+                        this.cond = true;
+                    }else{
+                        this.cond = false;
+                    }
+                }
+            },
+            computed: {
+
+            },
+            created() {
+
+            },
+        })
+    </script>
+
+</body>
+</html>

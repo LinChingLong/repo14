@@ -1,0 +1,349 @@
+@charset "UTF-8";
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.top {
+  background-image: url(./images/底色.jpg);
+  background-size: cover;
+  height: 634px;
+}
+.top .top_word {
+  color: #FFFFFF;
+  text-align: center;
+  padding-top: 60px;
+}
+.top .top_word h2 {
+  font-size: 32px;
+}
+.top .top_word h3 {
+  font-size: 28px;
+}
+.top .form {
+  text-align: center;
+  margin-top: 10px;
+}
+.top .word_frame {
+  width: 808px;
+  height: 322px;
+  background-color: #DAE4F1;
+  border: 2px solid #B57556;
+  border-radius: 20px;
+  margin: 32px auto 0;
+}
+.top .word_frame span {
+  position: relative;
+}
+.top .word_frame span .cactus_left {
+  position: absolute;
+  top: 20px;
+  left: 328px;
+}
+.top .word_frame span .cactus_right {
+  position: absolute;
+  top: -32px;
+  left: 446px;
+}
+.top .word_frame h5 {
+  font-size: 18px;
+  text-align: center;
+  color: #204379;
+  margin-top: 32.5px;
+}
+.top .word_frame h6 {
+  font-size: 16px;
+  padding-left: 16px;
+  color: #204379;
+  margin-top: 24.5px;
+  line-height: 1.8;
+}
+
+.wave img {
+  width: 100%;
+  display: block;
+}
+
+main {
+  background-color: #D3C3B8;
+  padding-top: 41px;
+}
+main .input_box {
+  width: 808px;
+  height: 575px;
+  background: #FFFFFF;
+  border: 2px solid #B57556;
+  box-shadow: 0px 1px 20px rgba(73, 72, 72, 0.25);
+  border-radius: 16px;
+  margin: 0 auto;
+  padding: 0 20px;
+  box-sizing: border-box;
+  position: relative;
+}
+main .input_box p:first-child {
+  margin-top: 40px;
+}
+main .input_box p {
+  margin-top: 20px;
+}
+main .input_box select {
+  width: 768px;
+  height: 57px;
+  border-radius: 20px;
+  margin-top: 4px;
+  border: 2px solid black;
+}
+main .input_box input {
+  width: 768px;
+  height: 57px;
+  border-radius: 20px;
+  margin-top: 4px;
+  box-sizing: border-box;
+}
+main .input_box img {
+  position: absolute;
+  top: -31.5px;
+  left: 312.5px;
+}
+main .input_box .tortoise {
+  position: absolute;
+  top: -30px;
+  left: 420px;
+}
+main .submit {
+  margin-top: 30px;
+  text-align: center;
+}
+main .submit p {
+  color: #E06D6D;
+  font-weight: 400;
+  font-size: 14px;
+}
+main .label_array {
+  width: 736px;
+  margin: 92px auto 0;
+}
+main .label_array ul {
+  overflow: hidden;
+  padding: 30px 32px 0;
+}
+main .label_array ul li {
+  width: 178px;
+  float: left;
+  margin-left: 32px;
+  margin-bottom: 21px;
+  position: relative;
+}
+main .label_array ul li h5 {
+  z-index: 2;
+  position: absolute;
+  font-size: 16.916px;
+  font-style: normal;
+  font-weight: 700;
+  color: #FFFFFF;
+  top: 2px;
+  left: 83px;
+}
+main .label_array ul li h6 {
+  font-size: 18px;
+  text-align: center;
+  transform: translateY(-50px);
+}
+main .label_array ul li .small_icon_green {
+  width: 45px;
+  height: 23px;
+  border: 1px solid #B3B960;
+  border-radius: 50px;
+  font-size: 12px;
+  color: #B3B960;
+  position: absolute;
+  z-index: 2;
+  top: 20px;
+  right: 7px;
+}
+main .label_array ul li .small_icon_green p {
+  text-align: center;
+  line-height: 23px;
+}
+main .label_array ul li .small_icon_blue {
+  width: 45px;
+  height: 23px;
+  border: 1px solid #A0BCC8;
+  border-radius: 50px;
+  font-size: 12px;
+  color: #A0BCC8;
+  position: absolute;
+  z-index: 2;
+  top: 20px;
+  right: 7px;
+}
+main .label_array ul li .small_icon_blue p {
+  text-align: center;
+  line-height: 23px;
+}
+main .label_array ul li .green_icon {
+  position: absolute;
+  z-index: 1;
+  top: -20px;
+  left: 0px;
+  right: 0px;
+  margin: auto;
+}
+main .label_array ul li .blue_icon {
+  position: absolute;
+  z-index: 1;
+  top: -20px;
+  left: 0px;
+  right: 0px;
+  margin: auto;
+}
+
+.lighthouse {
+  text-align: center;
+  margin-top: 50px;
+}
+.lighthouse .word_wrapper {
+  position: relative;
+}
+.lighthouse .word_wrapper p {
+  font-size: 20px;
+}
+.lighthouse .word_wrapper::after {
+  content: "";
+  position: absolute;
+  height: 75px;
+  border: 0.5px solid #204379;
+  background-color: #204379;
+  top: -10px;
+  left: 850px;
+  transform: rotate(-10deg);
+}
+.lighthouse .word_wrapper::before {
+  content: "";
+  position: absolute;
+  height: 75px;
+  border: 0.5px solid #204379;
+  background-color: #204379;
+  top: -10px;
+  left: 1070px;
+  transform: rotate(10deg);
+}
+.lighthouse img {
+  margin-top: 20px;
+}
+
+.footer_blue {
+  height: 677px;
+  background: #204379;
+  margin-top: 40px;
+  border-radius: 50px 50px 0px 0px;
+}
+.footer_blue p {
+  text-align: center;
+  letter-spacing: 0.2em;
+  color: #FFFFFF;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 200%;
+  padding-top: 40px;
+}
+.footer_blue .market {
+  margin-top: 24px;
+  text-align: center;
+}
+
+@media (max-width: 1440px) {
+  .lighthouse .word_wrapper::after {
+    left: 535px;
+  }
+  .lighthouse .word_wrapper::before {
+    left: 725px;
+  }
+}
+@media (max-width: 768px) {
+  .top .word_frame span .cactus_left {
+    left: 280px;
+  }
+  .top .word_frame span .cactus_right {
+    left: 405px;
+  }
+  main .input_box img {
+    left: 285.5px;
+  }
+  .top .word_frame {
+    width: 720px;
+  }
+  main .input_box {
+    width: 720px;
+  }
+  main .input_box select {
+    width: 680px;
+  }
+  main .input_box input {
+    width: 680px;
+  }
+  main .input_box .tortoise {
+    left: 390px;
+  }
+  .lighthouse .word_wrapper::after {
+    left: 285px;
+  }
+  .lighthouse .word_wrapper::before {
+    left: 485px;
+  }
+}
+@media (max-width: 414px) {
+  .top {
+    height: 739px;
+  }
+  .top .word_frame {
+    width: 366px;
+    height: 489px;
+    margin: 0 auto;
+  }
+  .top .word_frame span .cactus_left {
+    left: 105px;
+  }
+  .top .word_frame span .cactus_right {
+    left: 225px;
+  }
+  main .input_box {
+    width: 366px;
+    height: 575px;
+  }
+  main .input_box img {
+    left: 110.5px;
+  }
+  main .input_box .tortoise {
+    left: 215px;
+  }
+  main .input_box select {
+    width: 326px;
+  }
+  main .input_box input {
+    width: 326px;
+  }
+  main .label_array {
+    width: 100%;
+  }
+  main .label_array ul {
+    padding: 30px 0 0 0;
+    margin: 0 auto;
+    width: 366px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+  main .label_array ul li {
+    margin-left: 0;
+  }
+  .lighthouse .word_wrapper::after {
+    left: 105px;
+  }
+  .lighthouse .word_wrapper::before {
+    left: 305px;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */
